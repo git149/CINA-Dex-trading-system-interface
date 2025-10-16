@@ -82,6 +82,8 @@ export default defineConfig(({ mode }) => {
     },
     server: {
       port: 3000,
+      host: '0.0.0.0', // 允许外部访问
+      strictPort: false, // 端口被占用时自动尝试下一个可用端口
     },
     plugins,
   };
